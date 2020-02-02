@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  min-height: 650px;
+}
+
+#slogan-box {
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 50vw;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 4rem;
+}
+
+#text-box {
+  display: inline-flex;
+}
+
+#text {
+  font-weight: 500;
+  font-size: 3rem;
+  padding-right: 1.5rem;
+}
+
+#company {
+  text-align: end;
+  font-size: 1.7rem;
+  margin-top: -1.5rem;
+  padding-right: 5rem;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#button {
+  font-size: 1.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  margin: 2rem 3rem 0rem 3rem;
+}
+
+#button:focus {
+  outline: 0;
+}
+
+#button:hover {
+  opacity: 0.8;
+}
+
+#next-slogan {
+  color: #ffffff;
+}
+
+#slogan-left {
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-device-height: 650px), screen and (max-height: 650px) {
+  #main {
+    height: 100vh;
+  }
+
+  #slogan-box {
+    max-width: 80vw;
+    height: 95%;
+    padding: 0rem;
+  }
+
+  #text {
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  #text-box {
+    flex-direction: column;
+  }
+
+  #company {
+    text-align: end;
+    font-size: 1.7rem;
+    margin-top: -1rem;
+    padding-right: 0.5rem;
+  }
+
+  #button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0rem 1rem 0rem 1rem;
+    color: #ffffff;
+  }
+
+  #slogan-left {
+    padding: 2rem 3rem 0rem 3rem;
+    align-self: flex-start;
+    font-size: 2.5rem;
+  }
+}
